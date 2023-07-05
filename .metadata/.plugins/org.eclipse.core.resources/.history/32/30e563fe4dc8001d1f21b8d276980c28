@@ -1,0 +1,16 @@
+package controlStatement;
+
+public class StringType {
+
+	public static void main(String[] args) {
+		
+		
+		String s = "jasmine";
+	    String s1="JASMINE";
+	    String s2="Jasmine";
+	    String s3 = new String("JASMINE");
+	    String s4 = new String("Jasmin");
+
+	}
+
+}

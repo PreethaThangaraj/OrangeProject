@@ -1,0 +1,15 @@
+package com.OrangePom;
+
+import com.OrangeBase.Base_Orange;
+
+public class PageObjectManager_Orge extends Base_Orange{
+	private LoginPage log;
+
+	public LoginPage getLog() {
+		log = new LoginPage();
+		return log;
+	}
+	public static void main(String[] args) {
+		
+	}
+}

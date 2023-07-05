@@ -1,0 +1,29 @@
+package com.OrangeRunner;
+
+import org.testng.annotations.Test;
+
+import com.FlightPom.PageObjectManager;
+import com.OrangeBase.Base_Orange;
+
+public class FlightRunner extends Base_Orange {
+	
+	PageObjectManager pom = new PageObjectManager();
+@Test
+	public void loginBrowser() {
+		browserLaunch("chrome");
+		launchUrl("https://www.goibibo.com/");
+	}
+
+@Test
+public void pageLogin() throws InterruptedException {
+	inputToElement(pom.getFhp().getEnter_MobileNum(), "6382199843");
+	Thread.sleep(20000);
+	elementToBeClick(pom.getFhp().getClick_continuebtn());
+}
+
+public void searchFlight() {
+//	elementToBeClick(pom.getFs().getSelect_RoundTrip());
+	inputToElement(pom.getFs().getEnter_FromCity(), "Chennai");
+
+}
+}

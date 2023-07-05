@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;controlStatement&apos; to &apos;com.controlStatement&apos;&#x0D;&#x0A;- Original project: &apos;StatementConcept&apos;&#x0D;&#x0A;- Original element: &apos;StatementConcept/src/controlStatement&apos;&#x0D;&#x0A;- Renamed element: &apos;StatementConcept/src/com.controlStatement&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;controlStatement&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;controlStatement" name="com.controlStatement" qualified="false" references="true" stamp="1679478682086" textual="false" version="1.0"/>
+</session>

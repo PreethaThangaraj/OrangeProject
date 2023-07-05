@@ -1,0 +1,18 @@
+package com.LimeRoadPom;
+
+public class PageObjtManager {
+
+	private Pom_Lime url;
+	
+	public Pom_Lime getUrl() {
+		if(url==null)
+		url=new Pom_Lime();
+		return url;
+	}
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

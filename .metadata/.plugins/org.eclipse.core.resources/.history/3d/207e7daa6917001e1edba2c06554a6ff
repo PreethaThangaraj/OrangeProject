@@ -1,0 +1,32 @@
+package com.OrangeRunner;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+import com.OrangeBase.Base_Orange;
+import com.OrangePom.PageObjectManager_Orge;
+
+public class Runner_OrangeClass extends Base_Orange {
+	PageObjectManager_Orge pom = new PageObjectManager_Orge();
+	@Test
+	private void browserLaunch() {
+        browserLaunch("chrome");
+		launchUrl("https://www.orangehrm.com/");
+
+	}
+	@Test
+	private void browserUrl() {
+		browserLaunch("edge");
+		launchUrl("https://www.orangehrm.com/");
+	}
+	@Test
+	private void loginOrange() {
+		inputToElement(pom.getLog().getEnter_UserName(), "Admin");
+		inputToElement(pom.getLog().getEnter_Password(),"admin123");
+		elementToBeClick(pom.getLog().getClick_LoginButton());
+	}
+	@Test
+	private void takeScreenShot() throws IOException {
+		screenShot("orangepic");
+}
+}

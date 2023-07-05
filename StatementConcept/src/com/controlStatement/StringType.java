@@ -1,0 +1,36 @@
+package com.controlStatement;
+
+public class StringType {
+
+	public static void main(String[] args) {
+		String s = "jasmine";
+	    String s1="JASMINE";
+	    String s2="jasmine";
+	    String s3 = new String("JASMINE");
+	    String s4 = new String("Jasmin");
+	    
+	    StringBuffer b1=new StringBuffer("PROGRAM");
+	    StringBuilder b2=new StringBuilder("PROGRAM");
+	    
+	    
+	    System.out.println(System.identityHashCode(s));
+        System.out.println(System.identityHashCode(s1));
+        System.out.println(System.identityHashCode(s3));
+        System.out.println(System.identityHashCode(s2));
+        
+        System.out.println("---------------------");
+        
+        System.out.println(System.identityHashCode("b1"+b1));
+        System.out.println(System.identityHashCode("b2"+b2));
+        
+        System.out.println("---------------------");
+        
+        System.out.println(System.identityHashCode(s));
+        System.out.println(System.identityHashCode(s4));
+        s3="jasmine";
+        System.out.println(System.identityHashCode(s3));
+        
+        
+	}
+
+}

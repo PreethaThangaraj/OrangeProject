@@ -1,0 +1,11 @@
+
+@smoketest
+Feature: Check LimeRoad Website
+ 
+
+  
+  Scenario: To search the product of men
+    Given To launch the url "https://www.limeroad.com/"
+    And User click on shop men
+   
+ 

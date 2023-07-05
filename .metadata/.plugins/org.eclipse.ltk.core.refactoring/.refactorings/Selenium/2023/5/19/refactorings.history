@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;com.SeleniumConcept.IptSelenium.getAllPrice().text&apos; in &apos;com.SeleniumConcept.IptSelenium.getAllPrice()&apos; to field&#x0D;&#x0A;- Original project: &apos;Selenium&apos;&#x0D;&#x0A;- Original element: &apos;com.SeleniumConcept.IptSelenium.getAllPrice().text&apos;&#x0D;&#x0A;- Field name: &apos;text&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;text&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;com.SeleniumConcept{IptSelenium.java" name="text" selection="750 27" stamp="1683725430341" static="true" version="1.0" visibility="2"/>
+</session>

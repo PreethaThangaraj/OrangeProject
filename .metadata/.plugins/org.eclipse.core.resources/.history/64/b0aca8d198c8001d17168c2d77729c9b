@@ -1,0 +1,73 @@
+package com.controlStatement;
+
+import java.util.Arrays;
+
+public class StringFunction {
+
+	public static void main(String[] args) {
+		
+		String s ="JAVA PROGRAMMING";
+		
+		String s1="SELENIUM JAVA";
+		int length = s.length(); // length start from 1 to n
+		System.out.println(length);
+		
+		boolean equal=s.equals(s1);
+		System.out.println("equal");
+
+		boolean equalsignore=s.equalsIgnoreCase(s);
+		System.out.println("equalsingore");
+		
+	String uc=s.toUpperCase();
+	System.out.println("uc");
+	
+	String lc=s.toLowerCase();
+	System.out.println("lc");
+
+    String st= "Jave";
+    boolean startsWith = s.startsWith(st);
+System.out.println(startsWith);
+
+boolean endswith=s.endsWith("ing");
+System.out.println(endswith);
+	
+boolean contains=s.contains("pro");
+System.out.println("contains");
+
+//index starts from 0 to n
+
+int indexof = s.indexOf(" ");
+System.out.println(indexof);
+
+int lastindexof=s.lastIndexOf("a");
+System.out.println(lastindexof);
+
+char charat = s.charAt(5);
+System.out.println("charAt");
+
+String replace =s.replace("Java", "=Java");
+System.out.println(replace);
+
+String substring=s.substring(6, 15);
+System.out.println(substring);
+
+boolean empty=s.isEmpty();
+System.out.println("empty");
+
+String[] split=s1.split(" ");
+System.out.println(Arrays.toString(split));
+System.out.println("split");
+
+String concat = s.concat(s1);
+System.out.println(concat);
+
+System.out.println(s);
+String trim=s.trim();
+System.out.println(trim);
+
+
+	
+	
+	}
+
+}

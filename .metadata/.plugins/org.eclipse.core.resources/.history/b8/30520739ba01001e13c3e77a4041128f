@@ -1,0 +1,15 @@
+package com.controlStatement;
+
+public class LoopTest {
+
+	public static void main(String[] args) {
+		int n=2;
+		for(int i = 1;i<=10;i=n-i*1)
+		{
+			System.out.print(i);
+		    ++i;
+		}
+
+	}
+
+}

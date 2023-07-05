@@ -1,0 +1,14 @@
+package com.OrangePom;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.OrangeBase.Base_Orange;
+
+public class FlightBooking extends Base_Orange {
+
+	private FlightBooking() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+}

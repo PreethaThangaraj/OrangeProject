@@ -1,0 +1,27 @@
+package com.LimeRoadPom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Pom_Lime {
+
+	private WebDriverManager driver;
+	
+	@FindBy(xpath="//span[text()='SHOP MEN']")
+	private WebElement click_ShopMen;
+	
+	public Pom_Lime(WebDriverManager driv) {
+		driver=driv;
+	PageFactory.initElements((WebDriver) driver, this);
+	}
+
+
+	public WebElement getClick_ShopMen() {
+		return click_ShopMen;
+	}
+	
+}

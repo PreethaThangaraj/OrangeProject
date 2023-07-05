@@ -1,0 +1,22 @@
+package com.LimeRoadPom;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class PageObjManager {
+	private Pom_Lime login;
+	
+	private WebDriverManager driver;
+
+	public Pom_Lime getLogin() {
+		login = new Pom_Lime(driver);
+		return login;
+	}
+
+
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

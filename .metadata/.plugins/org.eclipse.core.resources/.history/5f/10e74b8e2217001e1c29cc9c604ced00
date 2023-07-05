@@ -1,0 +1,22 @@
+package com.OrangeRunner;
+
+import org.testng.annotations.Test;
+
+import com.OrangeBase.Base_Orange;
+import com.OrangePom.PageObjectManager_Orge;
+
+public class Runner_OrangeClass extends Base_Orange {
+
+	@Test
+	private void loginFb() {
+//		PageObjectManager_Orge pom = new PageObjectManager_Orge();
+		browserLaunch("chrome");
+//		launchUrl("https://www.facebook.com/");
+//		inputToElement(pom.getLog().getEnter_EmailId(), "jasminepreetha7");
+//		inputToElement(pom.getLog().getEnter_Password(),"jasjas");
+	}
+	@Test
+	private void browserLaunch() {
+		browserLaunch("edge");
+	}
+}

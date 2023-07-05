@@ -1,0 +1,14 @@
+package com.OrangeRunner;
+
+import org.testng.annotations.Test;
+
+import com.OrangeBase.Base_Orange;
+
+public class FlightRunner extends Base_Orange {
+@Test
+	public void loginBrowser() {
+		browserLaunch("chrome");
+		launchUrl("https://www.goibibo.com/");
+	}
+
+}

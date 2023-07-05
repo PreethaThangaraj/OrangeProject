@@ -1,0 +1,18 @@
+package com.SeleniumConcept;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Ajio {
+
+	public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\User\\eclipse-workspace\\Selenium\\WebDriver\\chromedriver.exe");
+		
+		WebDriver w=new ChromeDriver();
+		w.get("https://www.ajio.com/");
+		w.manage().window().maximize();
+		
+
+	}
+
+}

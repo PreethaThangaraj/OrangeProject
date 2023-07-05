@@ -1,0 +1,141 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-29T16:51:44.468Z",
+        "line": 7,
+        "name": "To search the product of men",
+        "description": "",
+        "id": "check-limeroad-website;to-search-the-product-of-men",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6632833500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To launch the url \"https://www.limeroad.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.limeroad.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.StepDefinition.StepDefinitionclass.to_launch_the_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9800467600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on shop men",
+            "match": {
+              "location": "com.StepDefinition.StepDefinitionclass.user_click_on_shop_men()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-29T16:52:02.130Z",
+        "line": 11,
+        "name": "To select the product of kids",
+        "description": "",
+        "id": "check-limeroad-website;to-select-the-product-of-kids",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click the kids",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2002100,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User select the Tshirt",
+            "match": {
+              "location": "com.StepDefinition.StepDefinitionclass.user_select_the_tshirt()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User select the blue Tshirt",
+            "match": {
+              "location": "com.StepDefinition.StepDefinitionclass.user_select_the_blue_tshirt()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9004400,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User click the shirt size",
+            "match": {
+              "location": "com.StepDefinition.StepDefinitionclass.user_click_the_shirt_size()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1003900,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User click the addToCard",
+            "match": {
+              "location": "com.StepDefinition.StepDefinitionclass.user_click_the_add_to_card()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "Check LimeRoad Website",
+    "description": "",
+    "id": "check-limeroad-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/feature/com.feature",
+    "tags": [
+      {
+        "name": "@smoketest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

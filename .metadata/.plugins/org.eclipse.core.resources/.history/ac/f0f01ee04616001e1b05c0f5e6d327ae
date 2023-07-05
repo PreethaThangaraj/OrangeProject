@@ -1,0 +1,59 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-29T06:27:47.759Z",
+        "line": 7,
+        "name": "To search the product of men",
+        "description": "",
+        "id": "check-limeroad-website;to-search-the-product-of-men",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "To launch the url \"https://www.limeroad.com/\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User click on shop men",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "Check LimeRoad Website",
+    "description": "",
+    "id": "check-limeroad-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/feature/com.feature",
+    "tags": [
+      {
+        "name": "@smoketest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

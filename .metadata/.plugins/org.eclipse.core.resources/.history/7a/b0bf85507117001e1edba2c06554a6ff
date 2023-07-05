@@ -1,0 +1,42 @@
+package com.OrangeRunner;
+
+import java.io.IOException;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.OrangeBase.Base_Orange;
+import com.OrangePom.googleSearch;
+
+public class googleRunner extends Base_Orange {
+googleSearch gs= new googleSearch();
+
+    @BeforeMethod()
+	private void launchbrowser() {
+		browserLaunch("chrome");
+		launchUrl("https://www.google.com/");
+	}
+	@Test
+	private void elementPass() {
+		inputToElement(gs.getSearch_Name(),"colours" );
+		elementToBeClick(gs.getClick_Search_Button());
+	}
+	
+	@Test
+	private void passTheElement() {
+		inputToElement(gs.getSearch_Name(),"ROSE" );
+		elementToBeClick(gs.getClick_Search_Button());
+	}
+	
+	@AfterMethod()
+	private void takeScreenShot() throws IOException {
+		screenShot("google");
+	}
+	
+	@AfterTest()
+	private void tabClose() {
+		tabClose();
+	}
+}

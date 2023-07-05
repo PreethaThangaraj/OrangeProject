@@ -1,0 +1,25 @@
+package com.OrangeRunner;
+
+import java.io.IOException;
+
+import com.OrangeBase.Base_Orange;
+import com.OrangePom.googleSearch;
+
+public class googleRunner extends Base_Orange {
+googleSearch gs= new googleSearch();
+	private void launchbrowser() {
+		browserLaunch("chrome");
+		launchUrl("https://www.google.com/");
+	}
+	
+	private void elementPass() {
+		inputToElement(gs.getSearch_Name(),"colours" );
+		elementToBeClick(gs.getClick_Search_Button());
+	}
+	private void takeScreenShot() throws IOException {
+		screenShot("google");
+	}
+	private void tabClose() {
+		tabClose();
+	}
+}

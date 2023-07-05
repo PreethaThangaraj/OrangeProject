@@ -1,0 +1,17 @@
+package com.OrangePom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+public class googleSearch {
+	private WebDriver driver;
+	
+	private googleSearch() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy( xpath = //textarea[@title='Search'])
+	private WebElement search_Name;
+	
+}

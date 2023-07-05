@@ -1,0 +1,30 @@
+package com.TestRunner;
+
+
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import com.LimeRoadBase.Base_Lime;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="C:\\Users\\User\\eclipse-workspace\\LimeRoad\\src\\test\\java\\com\\feature",
+glue="com.StepDefinitionclass",tags="@smoketest",
+plugin= {"pretty",
+		"html:LimeReports/limeroad.html",
+		"json:LimeReports/limeroad.json" }
+)
+
+public class RunnerClass extends Base_Lime {
+	public static WebDriverManager driver;
+	
+@BeforeClass
+public static void browserLaunch() {
+	browserLaunch("chrome");
+}
+	
+}

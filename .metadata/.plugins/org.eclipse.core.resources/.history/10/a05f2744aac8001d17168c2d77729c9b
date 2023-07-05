@@ -1,0 +1,33 @@
+package com.controlStatement;
+import java.util.Scanner;
+public class ControlStatement {
+	public static void main(String[] args) {
+		Scanner sc =new Scanner (System.in);
+		System.out.println("Enter the mark");
+int mark=sc.nextInt();
+if(mark>80)
+if(mark>60)
+if(mark<20)
+{	
+System.out.println("GRADE:A");
+}
+else if((mark>85 && mark==100)) {
+	System.out.println("PASS");
+}
+else if((mark<50 || mark<80)) {
+System.out.println("GRADE:B");	
+}
+ else if((mark>20 || mark<10)) {
+	System.out.println("GRADE:D");
+	}
+ else {
+	System.out.println("Grade:A");
+}
+else {
+	System.out.println("Grade:B");
+}
+else {
+	System.out.println("Grade:D");
+}
+}
+}

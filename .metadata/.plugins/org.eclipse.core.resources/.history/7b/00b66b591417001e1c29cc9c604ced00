@@ -1,0 +1,7 @@
+package com.OrangePom;
+
+import com.OrangeBase.Base_Orange;
+
+public class PageObjectManager_Orge extends Base_Orange{
+
+}

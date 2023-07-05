@@ -1,0 +1,25 @@
+package com.StepDefinition;
+
+import com.LimeRoadBase.Base_Lime;
+import com.LimeRoadPom.PageObjManager;
+import com.TestRunner.RunnerClass;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class StepDefinitionclass extends Base_Lime{
+    public WebDriverManager driver = RunnerClass.driver;
+    
+	PageObjManager pm = new PageObjManager();
+	
+	@Given("To launch the url {string}")
+	public void to_launch_the_url(String string) {
+	    to_launch_the_url(string);
+	}
+	@When("User click on shop men")
+	public void user_click_on_shop_men() throws InterruptedException {
+		Thread.sleep(3000);
+	  pm.getLogin().getClick_ShopMen().click();
+}
+}

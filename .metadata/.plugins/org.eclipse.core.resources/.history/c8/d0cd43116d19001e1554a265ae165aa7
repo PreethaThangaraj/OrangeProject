@@ -1,0 +1,21 @@
+package com.OrangeRunner;
+
+import org.openqa.selenium.support.PageFactory;
+
+import com.OrangeBase.Base_Orange;
+import com.OrangePom.FlightHomePage;
+
+public class FlightPageObjectManager extends Base_Orange {
+
+//	public void FlightPageObjectManger() {
+//		PageFactory.initElements(driver, this);
+//	}
+//	
+	private FlightHomePage hp;
+
+		public FlightHomePage getHp() {
+		hp = new FlightHomePage();
+		return hp;
+	}
+	
+}

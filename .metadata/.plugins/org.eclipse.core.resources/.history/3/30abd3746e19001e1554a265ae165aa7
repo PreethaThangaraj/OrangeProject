@@ -1,0 +1,20 @@
+package com.OrangeRunner;
+
+import org.testng.annotations.Test;
+
+import com.OrangeBase.Base_Orange;
+
+public class FlightRunner extends Base_Orange {
+	
+	FlightPageObjectManager pom = new FlightPageObjectManager();
+@Test
+	public void loginBrowser() {
+		browserLaunch("chrome");
+		launchUrl("https://www.goibibo.com/");
+	}
+
+@Test
+public void pageLogin() {
+	inputToElement(pom.getHp().getEnter_MobileNum(), "8608779847");
+}
+}

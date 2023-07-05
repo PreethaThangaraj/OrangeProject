@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Orange">
+  <test thread-count="5" name="LoginBrowser">
+    <classes>
+      <class name="com.OrangeRunner.Runner_OrangeClass"/>
+      <methods>
+		  <include name="loginFb"></include>
+		  <include name="browserLaunch"></include>
+	  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

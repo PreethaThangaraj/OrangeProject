@@ -1,0 +1,25 @@
+package com.controlStatement;
+
+public class arrayTypes {
+	//Array syntax=Datatype variablename[] = new Datatype [length]
+	public static void array() {
+	String st[] = new String[5];
+	
+	st[0]="JASMINE";
+	st[1]="PREETHA";
+	st[2]="KARTHIGA";
+	st[3]="INDHU";
+	st[4]="DURGA";
+	
+System.out.println(st[1] + st[2]);
+
+System.out.println("-----THE END-----");
+	
+	}
+	public static void main(String[] args) {
+		array();
+		
+
+	}
+
+}

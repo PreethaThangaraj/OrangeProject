@@ -1,0 +1,19 @@
+package com.LimeRoadPom;
+
+import org.openqa.selenium.WebDriver;
+
+public class PageObjManager {
+	
+	private Pom_Lime login;
+	private WebDriver driver;
+	
+	public Pom_Lime getLogin() {
+		login = new  Pom_Lime(driver);
+		return login;
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

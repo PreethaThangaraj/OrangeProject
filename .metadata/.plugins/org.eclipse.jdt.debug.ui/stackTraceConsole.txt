@@ -1,0 +1,10 @@
+io.cucumber.junit.UndefinedStepException: The step 'User click the kids' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("User click the kids")
+public void user_click_the_kids() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

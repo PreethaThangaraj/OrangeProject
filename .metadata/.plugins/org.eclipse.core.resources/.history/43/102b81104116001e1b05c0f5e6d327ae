@@ -1,0 +1,15 @@
+package com.LimeRoadPom;
+
+public class PageObjManager {
+	private Pom_Lime login;
+	
+	public Pom_Lime getLogin() {
+		login = new  Pom_Lime(null);
+		return login;
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

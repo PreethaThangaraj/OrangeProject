@@ -1,0 +1,19 @@
+package com.OrangePom;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.OrangeBase.Base_Orange;
+
+public class LoginPage extends Base_Orange {
+
+	private LoginPage() {
+		PageFactory.initElements(driver, this);
+	}
+	@FindBy(id="email")
+	private WebElement enter_EmailId;
+	
+	@FindBy(id="pass")
+	private WebElement enter_Password;
+}

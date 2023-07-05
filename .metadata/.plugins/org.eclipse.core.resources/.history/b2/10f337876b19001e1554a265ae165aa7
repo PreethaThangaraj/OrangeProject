@@ -1,0 +1,20 @@
+package com.OrangePom;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.OrangeBase.Base_Orange;
+
+public class FlightHomePage extends Base_Orange {
+
+	private FlightHomePage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(name="phone")
+	private WebElement enter_MobileNum;
+	
+	@FindBy()
+	
+}
